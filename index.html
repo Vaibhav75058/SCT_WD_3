@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>Tic-Tac-Toe</h1>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+            <div class="mode-selector">
+                <button class="mode-btn active" id="btn-pvp">Player vs Player</button>
+                <button class="mode-btn" id="btn-pvc">Player vs Computer (Unbeatable)</button>
+            </div>
+        </header>
+
+        <div class="scoreboard">
+            <div class="score-card player-x active-turn">
+                <div class="player-name">Player X</div>
+                <div class="score" id="score-x">0</div>
+            </div>
+            <div class="score-card player-o">
+                <div class="player-name">Player O</div>
+                <div class="score" id="score-o">0</div>
+            </div>
+        </div>
+
+        <div class="message-area" id="message-display">
+            Player X's Turn
+        </div>
+
+        <div class="board-container">
+            <div class="board" id="game-board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" id="btn-restart">Restart Game</button>
+            <button class="control-btn" id="btn-reset-scores">Reset Scores</button>
+        </div>
+
+
+    </div>
+    <footer>
+        <p>Made with ❤️ by Vaibhav</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
